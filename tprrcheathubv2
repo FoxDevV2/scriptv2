@@ -1,3 +1,8 @@
+-- TPRR Cheat Hub V2
+-- Version: 2.0
+
+-- Instances:
+
 local CheatTPRRScreenGUI = Instance.new("ScreenGui")
 local HomeFrame = Instance.new("Frame")
 local FazCoins = Instance.new("TextButton")
@@ -7,17 +12,17 @@ local UICorner_2 = Instance.new("UICorner")
 local UICorner_3 = Instance.new("UICorner")
 local FazCoinsFrame = Instance.new("Frame")
 local UICorner_4 = Instance.new("UICorner")
-local Close = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
 local Get = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Return = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
 local TicketsFrame = Instance.new("Frame")
 local UICorner_7 = Instance.new("UICorner")
 local Get_2 = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
-local Return = Instance.new("TextButton")
+local Return_2 = Instance.new("TextButton")
 local UICorner_9 = Instance.new("UICorner")
-local Close_2 = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
 
 --Properties:
@@ -73,20 +78,6 @@ FazCoinsFrame.Visible = false
 
 UICorner_4.Parent = FazCoinsFrame
 
-Close.Name = "Close"
-Close.Parent = FazCoinsFrame
-Close.BackgroundColor3 = Color3.fromRGB(0, 85, 255)
-Close.Position = UDim2.new(0.014999981, 0, 0.0199999996, 0)
-Close.Size = UDim2.new(0, 45, 0, 45)
-Close.Font = Enum.Font.SciFi
-Close.Text = "<-"
-Close.TextColor3 = Color3.fromRGB(255, 255, 255)
-Close.TextScaled = true
-Close.TextSize = 14.000
-Close.TextWrapped = true
-
-UICorner_5.Parent = Close
-
 Get.Name = "Get"
 Get.Parent = FazCoinsFrame
 Get.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -99,7 +90,21 @@ Get.TextScaled = true
 Get.TextSize = 14.000
 Get.TextWrapped = true
 
-UICorner_6.Parent = Get
+UICorner_5.Parent = Get
+
+Return.Name = "Return"
+Return.Parent = FazCoinsFrame
+Return.BackgroundColor3 = Color3.fromRGB(0, 85, 255)
+Return.Position = UDim2.new(0.0124999555, 0, 0.0199999996, 0)
+Return.Size = UDim2.new(0, 45, 0, 45)
+Return.Font = Enum.Font.SciFi
+Return.Text = "<"
+Return.TextColor3 = Color3.fromRGB(255, 255, 255)
+Return.TextScaled = true
+Return.TextSize = 14.000
+Return.TextWrapped = true
+
+UICorner_6.Parent = Return
 
 TicketsFrame.Name = "TicketsFrame"
 TicketsFrame.Parent = HomeFrame
@@ -124,73 +129,73 @@ Get_2.TextWrapped = true
 
 UICorner_8.Parent = Get_2
 
-Return.Name = "Return"
-Return.Parent = TicketsFrame
-Return.BackgroundColor3 = Color3.fromRGB(0, 85, 255)
-Return.Position = UDim2.new(0.0124999555, 0, 0.0199999996, 0)
-Return.Size = UDim2.new(0, 45, 0, 45)
-Return.Font = Enum.Font.SciFi
-Return.Text = "<-"
-Return.TextColor3 = Color3.fromRGB(255, 255, 255)
-Return.TextScaled = true
-Return.TextSize = 14.000
-Return.TextWrapped = true
+Return_2.Name = "Return"
+Return_2.Parent = TicketsFrame
+Return_2.BackgroundColor3 = Color3.fromRGB(0, 85, 255)
+Return_2.Position = UDim2.new(0.0124999555, 0, 0.0199999996, 0)
+Return_2.Size = UDim2.new(0, 45, 0, 45)
+Return_2.Font = Enum.Font.SciFi
+Return_2.Text = "<"
+Return_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Return_2.TextScaled = true
+Return_2.TextSize = 14.000
+Return_2.TextWrapped = true
 
-UICorner_9.Parent = Return
+UICorner_9.Parent = Return_2
 
-Close_2.Name = "Close"
-Close_2.Parent = HomeFrame
-Close_2.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-Close_2.Position = UDim2.new(0.931249976, 0, 0.0199999996, 0)
-Close_2.Size = UDim2.new(0, 45, 0, 45)
-Close_2.Font = Enum.Font.SciFi
-Close_2.Text = "X"
-Close_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Close_2.TextScaled = true
-Close_2.TextSize = 14.000
-Close_2.TextWrapped = true
+Close.Name = "Close"
+Close.Parent = HomeFrame
+Close.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+Close.Position = UDim2.new(0.931249976, 0, 0.0199999996, 0)
+Close.Size = UDim2.new(0, 45, 0, 45)
+Close.Font = Enum.Font.SciFi
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
 
-UICorner_10.Parent = Close_2
+UICorner_10.Parent = Close
 
 -- Scripts:
 
-local function UUUZOHS_fake_script() -- FazCoins.LocalScript 
+local function DNGV_fake_script() -- FazCoins.LocalScript 
 	local script = Instance.new('LocalScript', FazCoins)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.FazCoinsFrame.Visible = true
 	end)
 end
-coroutine.wrap(UUUZOHS_fake_script)()
-local function TQXZHFW_fake_script() -- Tickets.LocalScript 
+coroutine.wrap(DNGV_fake_script)()
+local function TQBIA_fake_script() -- Tickets.LocalScript 
 	local script = Instance.new('LocalScript', Tickets)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.TicketsFrame.Visible = true
 	end)
 end
-coroutine.wrap(TQXZHFW_fake_script)()
-local function YSYAH_fake_script() -- Close.LocalScript 
-	local script = Instance.new('LocalScript', Close)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Visible = false
-	end)
-end
-coroutine.wrap(YSYAH_fake_script)()
-local function RDYK_fake_script() -- Return.LocalScript 
+coroutine.wrap(TQBIA_fake_script)()
+local function LNBF_fake_script() -- Return.LocalScript 
 	local script = Instance.new('LocalScript', Return)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(RDYK_fake_script)()
-local function RRHTYR_fake_script() -- Close_2.LocalScript 
-	local script = Instance.new('LocalScript', Close_2)
+coroutine.wrap(LNBF_fake_script)()
+local function BAON_fake_script() -- Return_2.LocalScript 
+	local script = Instance.new('LocalScript', Return_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(RRHTYR_fake_script)()
+coroutine.wrap(BAON_fake_script)()
+local function BQSC_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(BQSC_fake_script)()
