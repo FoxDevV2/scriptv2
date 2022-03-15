@@ -1,4 +1,4 @@
--- TPRR Cheat Hub V2
+-- TPRR Cheat Hub
 -- Version: 2.0
 
 -- Instances:
@@ -159,43 +159,57 @@ UICorner_10.Parent = Close
 
 -- Scripts:
 
-local function DNGV_fake_script() -- FazCoins.LocalScript 
+local function TCSVQMN_fake_script() -- FazCoins.LocalScript 
 	local script = Instance.new('LocalScript', FazCoins)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.FazCoinsFrame.Visible = true
 	end)
 end
-coroutine.wrap(DNGV_fake_script)()
-local function TQBIA_fake_script() -- Tickets.LocalScript 
+coroutine.wrap(TCSVQMN_fake_script)()
+local function DMNEAV_fake_script() -- Tickets.LocalScript 
 	local script = Instance.new('LocalScript', Tickets)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.TicketsFrame.Visible = true
 	end)
 end
-coroutine.wrap(TQBIA_fake_script)()
-local function LNBF_fake_script() -- Return.LocalScript 
+coroutine.wrap(DMNEAV_fake_script)()
+local function GLUQB_fake_script() -- Get.LocalScript 
+	local script = Instance.new('LocalScript', Get)
+
+	local Player = game.Players.LocalPlayer
+	local char = Player.Character.HumanoidRootPart
+	while wait(0) do
+		if game.Workspace:WaitForChild("Tape") then
+			game.Workspace.Tape.CFrame = char.CFrame
+		else
+			print("Couldn't find Tape")
+		end
+	end
+end
+coroutine.wrap(GLUQB_fake_script)()
+local function MALQFL_fake_script() -- Return.LocalScript 
 	local script = Instance.new('LocalScript', Return)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(LNBF_fake_script)()
-local function BAON_fake_script() -- Return_2.LocalScript 
+coroutine.wrap(MALQFL_fake_script)()
+local function LBAHK_fake_script() -- Return_2.LocalScript 
 	local script = Instance.new('LocalScript', Return_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(BAON_fake_script)()
-local function BQSC_fake_script() -- Close.LocalScript 
+coroutine.wrap(LBAHK_fake_script)()
+local function AUGN_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(BQSC_fake_script)()
+coroutine.wrap(AUGN_fake_script)()
